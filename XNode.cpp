@@ -24,15 +24,10 @@
 #include "XNode.h"
 
 XNode::XNode(int inpin, int outpin, int inviruspin, int outviruspin) {
- pinMode(inpin, INPUT_PULLUP);
- pinMode(inviruspin, INPUT_PULLUP);
- pinMode(outpin, OUTPUT);
- pinMode(outviruspin, OUTPUT);
  _inviruspin = inviruspin;
  _outviruspin = outviruspin;
  _inpin = inpin;
  _outpin = outpin;
-  digitalWrite(_outviruspin, HIGH);
 }
 
 
@@ -71,6 +66,10 @@ void XNode::toggleInfection(){
  * This might be needed
  */
 void XNode::init(){
+  pinMode(_inpin, INPUT_PULLUP);
+  pinMode(_inviruspin, INPUT_PULLUP);
+  pinMode(_outpin, OUTPUT);
+  pinMode(_outviruspin, OUTPUT);
   digitalWrite(_outviruspin, HIGH);
 }
 
