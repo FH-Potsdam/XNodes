@@ -21,17 +21,18 @@
 // | #15      | No                  |
 // | #16      | No                  |
 //
-XNode node;
 
 int output_pin = 0;
 int output_virus_pin = 2;
 int input_pin = 4;
 int input_virus_pin = 5;
 int counter = 0;
+XNode node(input_pin, output_pin, input_virus_pin, output_virus_pin);
 
 boolean action = false;
 void setup (){
-  node = new XNode(input_pin, output_pin, input_virus_pin, output_virus_pin);
+  node.init();
+  // setup all the other pins you need
 }
 
 void loop(){

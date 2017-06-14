@@ -41,6 +41,7 @@ public:
   boolean listenForVirus();
   boolean virusDetect();
   boolean isInfected();
+  void init();
   void send();
   void sendVirus();
   void toggleInfection();

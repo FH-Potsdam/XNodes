@@ -65,7 +65,12 @@ boolean XNode::listen() {
 void XNode::toggleInfection(){
   _isInfected = !_isinfected;
 }
-
+/**
+ * This might be needed
+ */
+void XNode::init(){
+  digitalWrite(_outviruspin, HIGH);
+}
 void XNode::listenForVirus(){
     int inv = digitalRead(_inviruspin);
 
