@@ -70,9 +70,13 @@ void XNode::init(){
   pinMode(_inviruspin, INPUT_PULLUP);
   pinMode(_outpin, OUTPUT);
   pinMode(_outviruspin, OUTPUT);
+  digitalWrite(_outpin, HIGH);
   digitalWrite(_outviruspin, HIGH);
 }
 
+void XNode::setInfection(boolean flag){
+  _isinfected = flag;
+}
 boolean XNode::listenForVirus(){
     int inv = digitalRead(_inviruspin);
 
@@ -93,16 +97,16 @@ void XNode::setInterval(long interval) {
   _interval = interval;
 }
 void XNode::send() {
-    digitalWrite(_outpin, HIGH);
-    delay(_interval);
     digitalWrite(_outpin, LOW);
+    delay(_interval);
+    digitalWrite(_outpin, HIGH);
 }
 
 void XNode::sendVirus(){
   if(_isinfected == true) {
-    digitalWrite(_outviruspin, LOW);
-  } else {
     digitalWrite(_outviruspin, HIGH);
+  } else {
+    digitalWrite(_outviruspin, LOW);
 
   }
 }

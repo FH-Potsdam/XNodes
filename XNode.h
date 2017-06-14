@@ -45,6 +45,7 @@ public:
   void send();
   void sendVirus();
   void toggleInfection();
+  void setInfection(boolean flag);
   void setInterval(long interval);
 private:
   int _inpin;
