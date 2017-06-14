@@ -52,9 +52,11 @@ boolean XNode::virusDetect() {
 
 boolean XNode::isInfected(){
   return _isinfected;
+}
+
 boolean XNode::listen() {
     int in = digitalRead(_inpin);
-    }
+
     if (in == LOW) {
       return true;
     } else {
@@ -63,7 +65,7 @@ boolean XNode::listen() {
 }
 
 void XNode::toggleInfection(){
-  _isInfected = !_isinfected;
+  _isinfected = !_isinfected;
 }
 /**
  * This might be needed
@@ -71,19 +73,23 @@ void XNode::toggleInfection(){
 void XNode::init(){
   digitalWrite(_outviruspin, HIGH);
 }
-void XNode::listenForVirus(){
+
+boolean XNode::listenForVirus(){
     int inv = digitalRead(_inviruspin);
 
     if(inv == LOW) {
       _isinfected = true;
+      return true;
     } else {
       // do we need this?
       // this uninfects a node
       // if we use the reset pin to uninfect
       // the node we can remove this part of the code
       _isinfected = false;
+      return false;
 }
 }
+
 void XNode::setInterval(long interval) {
   _interval = interval;
 }

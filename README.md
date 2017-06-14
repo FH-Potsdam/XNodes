@@ -1,6 +1,6 @@
-Jack
-====
-A Arduino library to make the [“Jack in a Box”][jiab] project a breeze.  
+XNode
+=====
+A Arduino library to make the ["X"][jiab] project a breeze.  
 
 ## Installation  
 
@@ -9,17 +9,17 @@ A Arduino library to make the [“Jack in a Box”][jiab] project a breeze.
 1. download the library from GitHub [here][githubdl] 
 
 2. Unzip the archive
-3. rename the folder from `Jack-master` to `Jack`
+3. rename the folder from `XNode-master` to `XNode`
 4. move the library to `/Users/YOURUSERNAME/Documents/Arduino/libraries/`
 5. restart the Arduino IDE
 
 The example sketch(es) from the library should now be available under:  
 
-    File>Examples>Jack>simple_jack
+    File>Examples>XNode>simple_xnode
 
 To add it to your sketch go to:  
 
-    Sketch>Include Library>Jack
+    Sketch>Include Library>XNode
 
 
 **Windows:**  
@@ -52,5 +52,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 see also http://www.opensource.org/licenses/mit-license.php
 
 
-[jiab]: https://github.com/FH-Potsdam/jack-in-a-box "Jack in a Box on GitHub"
-[githubdl]: https://github.com/fabianmoronzirfas/Jack/archive/master.zip
+[jiab]: https://github.com/FH-Potsdam/XNode-in-a-box "XNode in a Box on GitHub"
+[githubdl]: https://github.com/fabianmoronzirfas/XNode/archive/master.zip

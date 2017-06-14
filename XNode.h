@@ -34,7 +34,7 @@
 
 class XNode {
 public:
-  XNode(int inpin, outpin, int inviruspin, int outviruspin);
+  XNode(int inpin,int outpin, int inviruspin, int outviruspin);
 
   ~XNode();
   boolean listen();

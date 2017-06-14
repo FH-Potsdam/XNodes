@@ -1,3 +1,4 @@
+#include <XNode.h>
 // The Input pins need to be pullup pins
 // to simplify the circuit
 //
