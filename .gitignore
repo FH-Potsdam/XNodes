@@ -1,0 +1,11 @@
+# MAC OSX
+.DS_Store
+# WIN
+Thumbs.db
+
+# sublime
+*.sublime-project
+*.sublime-workspace
+# sublime arduino
+*.hex
+
