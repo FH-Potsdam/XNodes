@@ -1,7 +1,7 @@
 #include <XNode.h>
 // This is an simple example to wire the XNodes
 // 1. an input has to be connected to another nodes output
-// 2. an input viurs as to be connected to anothers node output virus
+// 2. an input virus as to be connected to another's node output virus
 // 3. all xnodes need to share a common ground to make this work
 // 4. To reset the xnodes you could connect the RST pin to a button that
 //   is connected to GND
