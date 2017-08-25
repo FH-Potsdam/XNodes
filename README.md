@@ -1,6 +1,6 @@
 XNode
 =====
-A Arduino library to make the ["X"][jiab] project a breeze.  
+A Arduino library to make the ["Box-Net"][jiab] project a breeze.  
 
 ## Installation  
 
@@ -52,5 +52,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 see also http://www.opensource.org/licenses/mit-license.php
 
 
-[jiab]: https://github.com/FH-Potsdam/XNode-in-a-box "XNode in a Box on GitHub"
-[githubdl]: https://github.com/fabianmoronzirfas/XNode/archive/master.zip
+[jiab]: https://interface.fh-potsdam.de/prototyping-machines//hardware-prototypes/Boxnet/ "Boxnet"
+[githubdl]: https://github.com/FH-Potsdam/XNode/archive/master.zip
